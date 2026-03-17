@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School-Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/nms.jpeg" alt="School logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Latest News & Blog</h1>
+
+        </section>
+    </header>
+
+    <!-- ================= BLOG CONTENT ================= -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/school-blog.jpg" alt="School blog">
+                <h2>Updates, events, and stories from our school community.</h2>
+                <p>Ngagyur Memorial School shares news and stories from our school community.
+                    Our blog highlights important events, activities, and student achievements. </p><br>
+                <p>It helps parents and students stay informed about school programs.
+                    We regularly post updates about sports, cultural events, and learning activities.
+                    The blog also celebrates the success and creativity of our students. </p><br>
+                <p>Teachers and staff share valuable educational experiences and ideas.
+                    Parents can learn more about the school’s progress and initiatives. </p><br>
+                <p>These stories reflect the spirit and values of our school.
+                    Our goal is to connect the school with students, parents, and the community.
+                    Through our blog, we celebrate learning, growth, and memorable moments together.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>post categories</h3>
+                <div>
+                    <span>Science</span>
+                    <span>21</span>
+                </div>
+
+                <div>
+                    <span>Math</span>
+                    <span>21</span>
+                </div>
+
+                <div>
+                    <span>Social</span>
+                    <span>34</span>
+                </div>
+
+                <div>
+                    <span>English</span>
+                    <span>11</span>
+                </div>
+
+                <div>
+                    <span>Computer Science</span>
+                    <span>26</span>
+                </div>
+
+                <div>
+                    <span>Nepali</span>
+                    <span>21</span>
+                </div>
+
+                <div>
+                    <span>Economics</span>
+                    <span>11</span>
+                </div>
+
+                <div>
+                    <span>Commerce</span>
+                    <span>10</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We aim to empower students to grow academically, socially, and spiritually, preparing them for a bright future.</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Ngagyur Memorial School</p>
+    </section>
+
+     <!-- ================= JAVASCRIPT ================= -->
+    <script>
+
+        // Javascript for Toggle Menu
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

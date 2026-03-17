@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School-Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/nms.jpeg" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Our courses</h1>
+
+        </section>
+    </header>
+
+    <!-- ================= COURSE ================= -->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ratione?</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Primary Education</h3>
+                <p>Building a strong foundation in reading, writing, math, and basic knowledge for young learners.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Secondary Education</h3>
+                <p>Expanding knowledge and skills in various subjects to prepare students for higher studies and
+                    life.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Moral & Spiritual Studies</h3>
+                <p>Teaching values, compassion, and cultural traditions to help students grow as responsible and
+                    caring individuals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FACILITIES ================= -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, et.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="/images/library.png" alt="Library">
+                <h3>Library</h3>
+                <p>Our library offers a rich collection of books, journals, and digital resources in a quiet and
+                    comfortable environment for reading, research, and self-study.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="/images/basketball.png" alt="Basketball">
+                <h3>Playground</h3>
+                <p>Our playground provides a safe and spacious area for sports, games, and physical activities, helping
+                    students develop teamwork, fitness, and social skills.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="/images/cafeteria.png" alt="Cafeteria">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Our school provides nutritious and delicious meals to keep students energized and focused throughout
+                    the day.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We aim to empower students to grow academically, socially, and spiritually, preparing them for a bright
+            future.</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Ngagyur Memorial School</p>
+    </section>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+
+        // Javascript for Toggle Menu
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

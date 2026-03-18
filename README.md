@@ -14,7 +14,7 @@ A responsive school website designed to present information about the institutio
 - JavaScript
 
 ## 🌐 Live Demo
-https://ngagyurschoolsite.netlify.app
+https://tseringdev.github.io/school-website/
 
 ## 📂 GitHub Repository
 https://github.com/tseringdev/school-website
